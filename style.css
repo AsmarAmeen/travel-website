@@ -1,0 +1,364 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+/* Header */
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background-color: #1e90ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 45px;
+}
+
+.header .links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin-left: auto;
+}
+
+.header .links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header .links li a:hover {
+    color: yellow;
+}
+
+
+/* Home Section */
+.home {
+    background: url('./images/about-img.png') no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home .main-text {
+    max-width: 700px;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    margin-bottom: 1.5rem;
+}
+
+#home-btn {
+    padding: 0.8rem 1.5rem;
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#home-btn:hover {
+    background: darkorange;
+}
+
+/* Reusable Layouts */
+section {
+    padding: 4rem 2rem;
+}
+
+.heading h3, .main-txt h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Services Section */
+.services .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.services .row {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.services .row i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img img {
+    max-width: 100%;
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* ===== PACKAGES SECTION ===== */
+.packages .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.packages .card-content .row {
+    flex: 1 1 300px;
+    max-width: 320px;
+    background: #f9f9f9;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.packages .card-content .row:hover {
+    transform: scale(1.03);
+}
+
+.packages .card-content .row img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.packages .card-body {
+    padding: 1rem 0;
+}
+
+.packages .card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.packages .card-body .rating i {
+    color: gold;
+    font-size: 1rem;
+}
+
+.packages .card-body button {
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.packages .card-body button:hover {
+    background-color: #0b68c5;
+}
+
+/* ===== REVIEWS SECTION ===== */
+.reviews .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.reviews .row {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.reviews .row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.reviews h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.reviews .rating i {
+    color: gold;
+    margin: 0 2px;
+}
+
+.reviews p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #f9f9f9;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+/* Footer */
+#footer {
+    background: #1e90ff;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-content .row {
+    flex: 1 1 200px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   Responsive Breakpoints
+===================== */
+@media (max-width: 991px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        background: #1e90ff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    #show-menu:checked ~ .content .links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .about, .book, .contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .home h3 {
+        font-size: 2rem;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .gallary-card {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .home h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-info h3, .heading h3, .main-txt h3 {
+        font-size: 1.5rem;
+    }
+}
